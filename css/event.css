@@ -1,4 +1,4 @@
-.pc_menu_li:hover a, .tab_main_li:hover a{
+.pc_menu_li>a:hover, .tab_main_li:hover a{
     color: #e3051a;
 }
 .sub_menu_li>a:hover, .tab_sub_li>p:hover a{
