@@ -1,0 +1,278 @@
+@media all and (min-width: 1400px) {
+    .wrap{ width: 100%; }
+    header, section, footer{ width: 100%; position: relative; }
+
+    /* header */
+    header{
+        width: 100%;
+        background-color: #fff;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8;
+    }
+
+    .tab_ham, .tab_menu{ display: none; }
+
+    .menu_wrap{ 
+        width: 89.5833%;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .logo{ height: 40px; }
+
+    .pc_menu{
+        width: /*1200px*/ 74%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .pc_menu_li{ 
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .lang_box{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* hidden menu */
+
+    .pc_hidden_menu{
+        width: 100%;
+        border-top: 1px solid #aaa;
+        box-shadow: 1px 4px 3.5px #aaa;
+        display: none;
+    }
+
+    .pc_sub_menu{
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .sub_menu_li{
+        box-sizing: border-box;
+        width: 20%;
+        padding-left: 3%;
+        font-size: 1.0rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sub_menu_li a{ margin: 10px 0;}
+    .sub_menu_li a:last-child{ margin-bottom: 30px;}
+    .sub_menu_li a:first-child{ margin-top: 30px;}
+
+    /* left_go */
+
+    .left_go{
+        width: 30px;
+        height: 90vh;
+        position: fixed;
+        top: 10vh;
+        left: 100px;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left_go_list{
+        width: 100%;
+        height: 115px;
+        font-size: 30px;
+        color: #aaa;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .left_go_list::before{
+        content: '';
+        width: 5px;
+        height: 75px;
+        background-color: #aaa;
+        position: absolute;
+        left: -10px;
+        top: 10px;
+    }
+
+    .left_go_list::after{
+        content: '';
+        width: 5px;
+        height: 75px;
+        position: absolute;
+        left: -5px;
+        top: 10px;
+    }
+
+    .go_detail{
+        font-size: 0.75rem;
+        line-height: 0.9rem;
+        transform: rotateZ(90deg);
+        position: absolute;
+        top: 55px;
+        left: -12px;
+    }
+
+    .go_orion{ color: #e3051a; }
+    .go_orion::before{ background-color: #e3051a; }
+    .go_choco{ color: #8b4222; }
+    .go_choco::before{ background-color: #8b4222; }
+    .go_market{ color: #639d2f; }
+    .go_market::before{ background-color: #639d2f; }
+    .go_doctor{ color: #42080b; }
+    .go_doctor::before{ background-color: #42080b; }
+    .go_jeju{ color: #37b3ca; }
+    .go_jeju::before{ background-color: #37b3ca; }
+
+    .left_go_list:nth-child(2)>.go_detail{ top: 60px; left: -15px; }
+    .left_go_list:nth-child(3)>.go_detail{ top: 60px; left: -19px; white-space: nowrap !important; }
+    .left_go_list:nth-child(5)>.go_detail{ top: 60px; left: -18px; }
+
+    /* text_box 공통사항 */
+    .text_box{
+        position: absolute;
+        left: 20.8333%;
+    }
+
+    .little_title{font-size: 1.2rem; line-height: 0.3rem}
+    .title{ font-size: 3.5rem; font-weight: 900; }
+    .detail{ font-size: 2rem; margin: 30px 0 20px 0; font-weight: 500; }
+    .moreTo{ font-size: 1.2rem; }
+
+    /* section_1 : Orion */
+    .sec_1>div.bg_box{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/pc/orionCompany.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .t_box_1{
+        color: #e3051a;
+        top: 30%;
+    }
+    .t_box_1 a{ color: #e3051a; }
+
+    /* section_2 : chocopie house */
+    .sec_2>div.bg_box{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/pc/ChocopieHouse.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: left bottom;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .t_box_2{
+        text-align: right;
+        color: #8b4222;
+        top: 60%;
+    }
+    .t_box_2 a{ color: #8b4222; }
+
+    /* section_3 : market O */
+    .sec_3>div.bg_box{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/pc/MarketO.png);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: right bottom;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .t_box_3{
+        color: #639d2f;
+        top: 55%;
+    }
+    .t_box_3 a{ color: #639d2f; }
+
+    /* section_4 : Dr.You */
+    .sec_4>div.bg_box{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/pc/Dr.You.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: left bottom;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .t_box_4{
+        text-align: right;
+        color: #42080b;
+        top: 65%;
+    }
+    .t_box_4 a{ color: #42080b; }
+
+    /* section_5 : Jeju Yongamsoo */
+    .sec_5>div.bg_box{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/pc/JejuYongAmsoo.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: right bottom;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .t_box_5{
+        color: #37b3ca;
+        top: 25%;
+    }
+    .t_box_5 a{ color: #37b3ca; }
+
+    /* footer */
+    footer{
+        width: 100%;
+        height: 140px;
+        color: #333;
+        background-color: #ccc;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .site_map a{ color: #333;}
+    .site_map{
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+
+    .addr{ font-size: 0.9rem; margin-bottom: 10px; }
+    .copy{ font-size: 0.6rem; }
+}
