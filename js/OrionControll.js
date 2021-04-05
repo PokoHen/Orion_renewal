@@ -65,7 +65,8 @@ $(document).ready(function(){
     let wheeltime = false;
     let delta = 0;
     
-    $('section').each(function(index){
+    $('section').each(function(){
+        /* 마우스 휠 */
         $(this).on('mousewheel DOMMouseScroll', function(e){
             
             if(wheeltime == true){ return ; }
@@ -81,8 +82,6 @@ $(document).ready(function(){
                 delta = E.detail * (-40);
             else
                 delta = E.wheelDelta;
-            
-            console.log(delta);
             
             if(delta < 0 && !event_scroll ){
                 event_scroll = true;
@@ -101,6 +100,7 @@ $(document).ready(function(){
             }
             
         });
+        
     });
     
     /* tab_click */
